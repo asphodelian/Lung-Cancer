@@ -397,12 +397,20 @@ colnames(second) <- c("vjGene", "1056201630", "1056201652", "1056201723",
                       "20007341206", "20007341222", "20007341336", 
                       "20007341420", "20011092291")
 
-# transposing time
-trans2 <- as.data.frame(t(second))
+# row names
+rownames(second) <- second[,1]
 
+# remove
+second$vjGene <- NULL
 
+# log/standardize
+log2 <- log(second)
+trans2 <- t(log2)
+stand2 <- scale(trans2)
 
-rownames(trans2) <- rownum
+# ID
+dose2 <- as.data.frame(stand2)
+
 
 # saving as excel file
 #write.xlsx(trans2, 
