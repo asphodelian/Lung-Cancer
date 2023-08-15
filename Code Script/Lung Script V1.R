@@ -676,6 +676,6 @@ dose2 <- select(dose2, Patient.ID, "TRBV1_TRBJ1-1", "TRBV1_TRBJ1-2",
                  "TRBV9_TRBJ2-7")
 
 # saving as excel file
-#write.xlsx(trans2, 
-#           "C:/Users/knigh/OneDrive/Desktop/Github/TCR-Project/Datasets/Lung Data/2ndose.xlsx", 
-#           row.names = FALSE)
+write.xlsx(dose2, 
+           "C:/Users/knigh/OneDrive/Desktop/Github/Lung-Cancer/Datasets/2ndose.xlsx", 
+           row.names = FALSE)
