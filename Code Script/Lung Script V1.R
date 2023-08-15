@@ -19,9 +19,9 @@ library(xlsx)
 # Datasets #
 ############
 
-lung <- read_csv("C:/Users/knigh/OneDrive/Desktop/Github/TCR-Project/Datasets/Lung Data/dt.analysis.lung.csv",
+lung <- read_csv("C:/Users/knigh/OneDrive/Desktop/Github/Lung-Cancer/Datasets/dt.analysis.lung.csv",
                  show_col_types = FALSE)
-lungenes <- read_csv("C:/Users/knigh/OneDrive/Desktop/Github/TCR-Project/Datasets/Lung Data/vjGene.p.all.bytime.csv",
+lungenes <- read_csv("C:/Users/knigh/OneDrive/Desktop/Github/Lung-Cancer/Datasets/vjGene.p.all.bytime.csv",
                      show_col_types = FALSE)
 
 #############
@@ -56,7 +56,7 @@ dim(lungenes)
 ################
 
 # no need for screening
-lungene <- lungenes[, -c(2:70)]
+lungene <- lungenes[, -c(2:69)]
 lungene[is.na(lungene)] <- 1e-7 
 lungene[lungene == 0] <- 1e-7
 
