@@ -34,6 +34,16 @@ second <- second[order(second$Patient.ID, decreasing = TRUE),]
 
 intersect(row.names(pre), row.names(second))
 
+matching <- pre$Patient.ID == second$Patient.ID
+all(matching)
+
+# Find rows where "Patient.ID" values do not match
+which(pre$Patient.ID != second$Patient.ID)
+
+# Print the indices of mismatched rows
+print(mismatched_rows)
+
+
 combine <- cbind(pre, second)
 
 
