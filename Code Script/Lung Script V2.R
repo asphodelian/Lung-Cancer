@@ -19,8 +19,8 @@ library(xlsx)
 # Datasets #
 ############
 
-pre <- read_excel("C:/Users/knigh/OneDrive/Desktop/Github/TCR-Project/Datasets/Lung Data/predose.xlsx")
+pre <- read_excel("C:/Users/knigh/OneDrive/Desktop/Github/Lung-Cancer/Datasetspredose.xlsx")
 dim(pre)
 
-second <- read_excel("C:/Users/knigh/OneDrive/Desktop/Github/TCR-Project/Datasets/Lung Data/2ndose.xlsx")
+second <- read_excel("C:/Users/knigh/OneDrive/Desktop/Github/Lung-Cancer/Datasets2ndose.xlsx")
 dim(second)
