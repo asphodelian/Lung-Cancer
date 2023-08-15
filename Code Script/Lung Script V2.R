@@ -29,10 +29,12 @@ dim(second)
 # Ratios #
 ##########
 
+pre <- pre[order(pre$Patient.ID, decreasing = TRUE),]
+second <- second[order(second$Patient.ID, decreasing = TRUE),]
+
+intersect(row.names(pre), row.names(second))
+
 combine <- cbind(pre, second)
 
-common_rows <- intersect(row.names(pre), row.names(second))
 
-# Print the common row names
-print(common_rows)
 
