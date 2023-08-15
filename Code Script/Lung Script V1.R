@@ -367,12 +367,10 @@ preDose <- select(preDose, Patient.ID, "TRBV1_TRBJ1-1", "TRBV1_TRBJ1-2",
                    "TRBV9_TRBJ2-4", "TRBV9_TRBJ2-5", "TRBV9_TRBJ2-6", 
                    "TRBV9_TRBJ2-7")
 
-rownames(preTrans) <- rownum
-
 # saving as excel file
-#write.xlsx(preTrans, 
-#           "C:/Users/knigh/OneDrive/Desktop/Github/TCR-Project/Datasets/Lung Data/predose.xlsx", 
-#           row.names = FALSE)
+write.xlsx(preDose, 
+           "C:/Users/knigh/OneDrive/Desktop/Github/Lung-Cancer/Datasets/predose.xlsx", 
+           row.names = FALSE)
 
 ############
 # 2nd dose #
