@@ -19,8 +19,20 @@ library(xlsx)
 # Datasets #
 ############
 
-pre <- read_excel("C:/Users/knigh/OneDrive/Desktop/Github/Lung-Cancer/Datasetspredose.xlsx")
+pre <- read_excel("C:/Users/knigh/OneDrive/Desktop/Github/Lung-Cancer/Datasets/predose.xlsx")
 dim(pre)
 
-second <- read_excel("C:/Users/knigh/OneDrive/Desktop/Github/Lung-Cancer/Datasets2ndose.xlsx")
+second <- read_excel("C:/Users/knigh/OneDrive/Desktop/Github/Lung-Cancer/Datasets/2ndose.xlsx")
 dim(second)
+
+##########
+# Ratios #
+##########
+
+combine <- cbind(pre, second)
+
+common_rows <- intersect(row.names(pre), row.names(second))
+
+# Print the common row names
+print(common_rows)
+
