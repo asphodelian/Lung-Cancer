@@ -368,15 +368,15 @@ preDose <- select(preDose, Patient.ID, "TRBV1_TRBJ1-1", "TRBV1_TRBJ1-2",
                    "TRBV9_TRBJ2-7")
 
 # saving as excel file
-write.xlsx(preDose, 
-           "C:/Users/knigh/OneDrive/Desktop/Github/Lung-Cancer/Datasets/predose.xlsx", 
-           row.names = FALSE)
+#write.xlsx(preDose, 
+#           "C:/Users/knigh/OneDrive/Desktop/Github/Lung-Cancer/Datasets/predose.xlsx", 
+#           row.names = FALSE)
 
 ############
 # 2nd dose #
 ############
 
-second <- lungene[, c(1, 63:123)]
+second <- lungene[, c(1, 64:124)]
 
 colnames(second) <- c("vjGene", "1056201630", "1056201652", "1056201723", 
                       "1056201734", "1056201763", "1056201766", "1093501642",
