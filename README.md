@@ -6,5 +6,6 @@ Welcome! This is a continuation of the summer 2023 TCR-Project. Time had ran out
 - contains all the code done for this project
 2. Datasets
 - holds datasets related to lung cancer patients
-3. README
+3. LICENSE
+4. README
 - What you're reading now!
